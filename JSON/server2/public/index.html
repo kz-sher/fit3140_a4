@@ -1,0 +1,38 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>    
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCBCJLbN3SzzF6yQk9s7JpN4keGBHpQAtE",
+        authDomain: "fit3140-assignment4.firebaseapp.com",
+        databaseURL: "https://fit3140-assignment4.firebaseio.com",
+        projectId: "fit3140-assignment4",
+        storageBucket: "fit3140-assignment4.appspot.com",
+        messagingSenderId: "663245191631"
+    };
+    firebase.initializeApp(config);
+    </script>
+    <title>FIT3140 Assignment 4</title>
+</head>
+<body>
+    <p>
+        <div class="msgTitle">DApp Ecommerce System</div>
+        <h1 class="from">From: </h1><input id=from type="text"/>
+        <br>
+        <h2 class="to">To: </h2><input id=to type="text"/>
+        <br>
+        <h3 class="amount">Amount: </h3><input id=amount type="text"/>
+        <br>
+        <h4 class="description">Description: </h4><input id="desc" type="text"/>
+        <br>
+        <h5 class="status">Status: </h5><text id="status"></text>
+        <br>
+    <p>
+        <button id="sendTransaction" class="buttonSet">Send Transaction</button>
+</body>
+</html>
